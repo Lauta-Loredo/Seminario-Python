@@ -30,7 +30,7 @@ correct_answers_index = [1, 2, 0, 3, 1]
 3.
 # El usuario deberá contestar 3 preguntas
 points = 0
-questions_to_ask = random.choices(list(zip(questions, answers, correct_answers_index)), k=3)
+questions_to_ask = random.sample(list(zip(questions, answers, correct_answers_index)), k=3)
 
 for questions, option_answers, correct_answers in questions_to_ask:
     print(questions)
